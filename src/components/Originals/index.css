@@ -1,0 +1,33 @@
+.li-item {
+  list-style-type: none;
+}
+
+.trendImg {
+  width: 100%;
+  border-radius: 32px;
+  padding: 6%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trendImg:hover {
+  transform: scale(1.2);
+}
+
+.slick-container {
+  padding: 0 6%;
+  background: #131313;
+  margin: 0 !important;
+}
+
+.slick-container h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 3%;
+  padding-left: 22px;
+}
+.loader-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 18%;
+}

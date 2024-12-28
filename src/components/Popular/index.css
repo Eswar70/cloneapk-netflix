@@ -1,0 +1,81 @@
+body {
+  background: #131313;
+}
+.popular-ul-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6%;
+  gap: 22px;
+  padding-top: 7%;
+}
+
+.popular-ul-list li {
+  list-style-type: none;
+  flex: 0 0 20%;
+}
+
+.popular-img {
+  width: 300px;
+  border-radius: 8px;
+  margin-left: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.popular-img:hover {
+  transform: scale(1.2);
+}
+
+.failure-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  color: #fff;
+  font-family: 'Roboto';
+  margin-top: 8%;
+}
+
+.failure-cont p {
+  padding: 16px 0;
+  font-size: 16px;
+}
+
+.failure-cont button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 22px;
+  border-radius: 4px;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  gap: 10px;
+}
+
+.pagination-container button {
+  padding: 5px 10px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.pagination-container button.active {
+  color: white;
+  border: 1px solid #ccc;
+}
+
+.pagination-container button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 767px) {
+  .popular-ul-list {
+    margin-top: 18%;
+  }
+}

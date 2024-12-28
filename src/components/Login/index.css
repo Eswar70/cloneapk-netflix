@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(
+    116.64deg,
+    rgba(0, 0, 0, 0.8) 0.46%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.mainCont {
+  min-height: 100vh;
+  background-image: url('https://res.cloudinary.com/dgwvwp4qo/image/upload/v1732854484/netfilx_1LoginBg_cee81r.png');
+  background-position: center;
+  background-size: cover;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    116.64deg,
+    rgba(0, 0, 0, 0.8) 0.46%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  color: #fff;
+  padding: 2%;
+  width: 32%;
+  margin-bottom: 14%;
+}
+.formContainer form h1 {
+  text-align: center;
+}
+.formContainer form input {
+  background: #333333;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  margin-bottom: 12px;
+  border-radius: 3px;
+}
+.formContainer form label {
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+.formContainer form button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 12px 0;
+}
+.formContainer form p {
+  color: red;
+}
+.loginImg {
+  margin: 3% 6%;
+  width: 200px;
+}
+.loginImg,
+input,
+button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.loginImg:hover,
+input:hover,
+button:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+  .formContainer form button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .loginImg {
+    width: 100px;
+    margin-top: 6%;
+  }
+  .formContainer {
+    margin-top: 18%;
+  }
+  .formContainer form {
+    width: 90%;
+    background: none;
+  }
+  .mainCont {
+    background: #131313;
+  }
+  .formContainer form h1 {
+    text-align: left;
+  }
+}

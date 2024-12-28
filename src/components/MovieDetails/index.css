@@ -1,0 +1,147 @@
+.background-cont {
+  background-size: cover;
+  background-position: center;
+  margin: 0.3%;
+  border-radius: 1%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.background-cont p {
+  width: 40%;
+  color: #fff;
+}
+
+.background-cont h1 {
+  color: #fff;
+}
+
+.background-cont button {
+  width: max-content;
+  padding: 12px 22px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.background-cont button:hover {
+  transform: scale(1.2);
+}
+
+.para-cont {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  width: 220px;
+  font-family: 'Roboto';
+}
+.background {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  padding-top: 12%;
+  padding-left: 6%;
+}
+.adult {
+  border: 1px solid #fff;
+  padding: 0 1px;
+  text-align: center;
+}
+
+.details-cont {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-cont div h1 {
+  font-size: 19px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.details-cont div p {
+  color: #ffffff;
+}
+
+.moreLike {
+  padding-left: 6%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.moreMovies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 6%;
+  padding-right: 6%;
+  margin-top: 2%;
+}
+.moreMovies li {
+  flex: 0 0 211px;
+  list-style-type: none;
+}
+.moreMovies li img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.3s ease-in-out;
+}
+.moreMovies li img:hover {
+  transform: scale(1.2);
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+}
+.pagination-controls button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+}
+.pagination-controls span {
+  color: #fff;
+  font-size: 12px;
+  padding: 0 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .background-cont {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .background-cont p {
+    width: 88%;
+  }
+  .background-cont h1 {
+    font-size: 26px;
+    color: #fff;
+    padding-top: 22px;
+  }
+  .details-cont {
+    display: grid;
+    gap: 6%;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .moreMovies li {
+    flex: 0 0 280px;
+  }
+}

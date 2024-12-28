@@ -1,0 +1,37 @@
+.footerCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  background: #131313;
+}
+
+.button-cont {
+  display: flex;
+  gap: 12px;
+}
+.footerCont div button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 0;
+  transition: transform 0.3s ease-in-out;
+}
+.footerCont div button:hover {
+  transform: scale(1.2);
+}
+
+.footerCont p {
+  margin-top: 0;
+  color: #fff;
+  font-family: 'Roboto';
+}
+
+@media screen and (max-width:767px){
+    .footerCont div button{
+        padding: 9px;
+    }
+}

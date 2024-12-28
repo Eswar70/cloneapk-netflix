@@ -1,0 +1,44 @@
+.account-cont {
+  background-color: #fff;
+  margin-top: 6%;
+  padding: 3% 6%;
+  height: 70vh;
+  font-family: 'Roboto';
+}
+
+.member-cont {
+  display: flex;
+  gap: 22px;
+  padding: 12px 0;
+}
+.premium {
+  display: flex;
+  gap: 22px;
+}
+
+.account-cont h1,
+.member-cont p {
+  color: black;
+}
+
+.button-cont {
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+}
+
+.button-cont button {
+  background: #e50914;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 22px;
+}
+
+@media screen and (max-width:767px){
+    .account-cont{
+        margin-top: 62px;
+    }
+}
